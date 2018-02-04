@@ -1,0 +1,5 @@
+executable forloop 
+  $warnings no-unused
+  $generate-c
+  forloop.c2
+end

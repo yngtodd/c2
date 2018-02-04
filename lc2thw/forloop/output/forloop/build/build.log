@@ -1,0 +1,5 @@
+current dir: /Users/youngtodd/c2/forloop
+changing to dir: output/forloop/build/
+running command: /usr/bin/make
+gcc -O3 -Wall -Wextra -Wno-unused -Wno-unused-parameter -std=c99 -c forloop.c -o forloop.o
+gcc -o ../forloop forloop.o

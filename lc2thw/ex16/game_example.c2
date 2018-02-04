@@ -1,0 +1,14 @@
+module game_example;
+
+import mygame local;
+
+func void example() {
+  Game* g = Game.create("Final FantasyVII", "JRPG", 1997, 100);
+  g.print();
+  g.free();
+}
+
+public func i32 main() {
+  example();
+  return 0;
+}

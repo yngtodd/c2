@@ -1,0 +1,37 @@
+module mygame;
+
+import stdio as io;
+import stdlib;
+
+public type Game struct {
+  char* name;
+  char* game_type;
+  i32 year_created;
+  i32 rating;
+} @(opaque)
+
+// a non-public struct-function
+func void Game.init(Game* game, char* name, char* game_type, i32 year_created, i32 rating) {
+  game.name = name;
+  game.game_type = game_type;
+  game.year_created = year_created;
+  game.rating = rating;
+}
+
+public func Game* Game.create(char* name, char* game_type, i32 year_created, i32 rating) {
+  Game* game = stdlib.malloc(sizeof(Game));
+  game.init(name, game_type, year_created, rating);
+  return game;
+}
+
+public func void Game.print(const Game* game) {
+  io.printf("Game: %s\n", game.name);
+  io.printf("\tType: %s\n", game.game_type);
+  io.printf("\tYear created: %d\n", game.year_created);
+  io.printf("\tRating: %d\n", game.rating);
+}
+
+// a public, struct-function, first argument: Shape*
+public func void Game.free(Game* game) {
+    stdlib.free(game);
+}

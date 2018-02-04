@@ -1,0 +1,19 @@
+module forloop;
+
+import stdio as io;
+
+func void demo_for() {
+    /*  The foor-loop is the same as C. 
+     *  You can declare the loop variable (i) inside.
+     */
+    for (i32 i=0; i<10; i++) {
+        io.printf("%d\n", i);
+    }
+}
+
+public func i32 main(i32 argc, const i8*[] argv) {
+    demo_for();
+    return 0;
+}
+
+

@@ -1,0 +1,6 @@
+executable game_example 
+  $warnings no-unused
+  $generate-c
+  mygame.c2
+  game_example.c2
+end

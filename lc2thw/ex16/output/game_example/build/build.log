@@ -1,0 +1,19 @@
+current dir: /Users/youngtodd/c2/lcthw/ex16
+changing to dir: output/game_example/build/
+running command: /usr/bin/make
+gcc -O3 -Wall -Wextra -Wno-unused -Wno-unused-parameter -std=c99 -c mygame.c -o mygame.o
+gcc -O3 -Wall -Wextra -Wno-unused -Wno-unused-parameter -std=c99 -c game_example.c -o game_example.o
+game_example.c:11:39: warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  mygame_Game* g = mygame_Game_create("Final FantasyVII", "JRPG", 1997, 100);
+                                      ^~~~~~~~~~~~~~~~~~
+./mygame.h:16:48: note: passing argument to parameter 'name' here
+mygame_Game* mygame_Game_create(unsigned char* name, unsigned char* game_type, int32_t year_created, int32_t rating);
+                                               ^
+game_example.c:11:59: warning: passing 'char [5]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  mygame_Game* g = mygame_Game_create("Final FantasyVII", "JRPG", 1997, 100);
+                                                          ^~~~~~
+./mygame.h:16:69: note: passing argument to parameter 'game_type' here
+mygame_Game* mygame_Game_create(unsigned char* name, unsigned char* game_type, int32_t year_created, int32_t rating);
+                                                                    ^
+2 warnings generated.
+gcc -o ../game_example mygame.o game_example.o
