@@ -1,0 +1,5 @@
+  executable ex07
+    $warnings no-unused
+    $generate-c
+    ex07.c2
+  end

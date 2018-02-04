@@ -1,0 +1,21 @@
+module ex07;
+
+import stdio as io;
+
+public func i32 main(i32 argc, const i8*[] argv) {
+  i16 distance = 300;
+  f32 power = 9000.0f;
+  f64 super_power = 56789.4532;
+  char initial = 'M';
+  char[] middle_name  = "Todd";
+  char[] last_name = "Young";
+
+  io.printf("Teslas currently have a %d mile range.\n" distance);
+  io.printf("Your power level is over %f!\n" power);
+  io.printf("You have $f super powers\n" super_power);
+  io.printf("My first initial is %c\n" initial);
+  io.printf("My middle name is $s.\n" middle_name);
+  io.printf("My last name os %s.\n" last_name);
+
+  return 0;
+}

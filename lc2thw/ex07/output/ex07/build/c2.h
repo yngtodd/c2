@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-#define c2_buildtime 1517783489
+#define c2_buildtime 1517786169
 #define c2_min_i8 -128
 #define c2_max_i8 127
 #define c2_min_u8 0
