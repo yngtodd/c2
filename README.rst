@@ -19,4 +19,5 @@ Here is the developers' take on the language:
 References:
 -----------
 GitHub: https://github.com/c2lang/c2compiler
+
 Documentation: http://c2lang.org/site/
